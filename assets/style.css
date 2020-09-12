@@ -40,3 +40,77 @@ nav {
 #social-media-links {
     display: none;
 }
+
+
+/* --- MAIN SECTION --- */
+
+main h1 {
+    display: none;
+}
+
+
+/* --- PROJECTS SECTION --- */
+
+#porfolio-title {
+    text-align: center;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+
+/* --- PROJECT CARDS --- */
+
+.project {
+    /* TODO slight shadows */
+    background-color: #9CC3D5FF;
+    color: #0063B2FF;
+    width: 95%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.project-header p {
+    text-align: center;
+}
+
+.project-details {
+    text-align: center;
+    background-color: #0063B2FF;
+    color: #9CC3D5FF;
+}
+
+.project-details h2 {}
+
+.project-details p {
+    font-weight: 100;
+}
+
+
+/* --- FOOTER GRID --- */
+
+.project-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.project-githib {
+    grid-column: 1 1;
+    display: block;
+    margin: auto;
+    /* cursor: pointer; */
+}
+
+.project-host {
+    grid-column: 2 2;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
