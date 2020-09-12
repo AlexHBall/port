@@ -66,18 +66,18 @@ main h1 {
 /* --- PROJECT CARDS --- */
 
 .project {
-    /* TODO slight shadows */
     background-color: #9CC3D5FF;
     color: #0063B2FF;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc;
     width: 95%;
     display: block;
     margin: auto;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .project-header p {
     text-align: center;
+    margin: 0.5rem 0;
 }
 
 .project-details {
@@ -86,10 +86,14 @@ main h1 {
     color: #9CC3D5FF;
 }
 
-.project-details h2 {}
+.project-details h2 {
+    /* background-color: pink; */
+    padding: 0.5rem 0;
+}
 
 .project-details p {
     font-weight: 100;
+    padding: 0.3rem 5% 1rem 5%;
 }
 
 
@@ -99,6 +103,7 @@ main h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    padding: 0.4rem 0;
 }
 
 .project-githib {
