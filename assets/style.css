@@ -1,145 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
-/* NAVIGATION */
-
-aside {
-    background-color: #7BCCFF;
-    padding: 5% 2%;
-    display: grid;
-    grid-template-columns: auto 1.5rem;
+html,
+body {
+  overflow-x: hidden;
 }
 
-figure {
-    width: auto;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #F9F7F7;
 }
 
-figcaption {
-    font-weight: bold;
-    text-align-last: center;
+header {
+  background-color: #3F72AF;
+  color: #FFFFED;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 82px;
 }
 
-#menu-icon {
-    width: 1.5rem;
-    cursor: pointer;
+header h3 {
+  font-size: 16px;
+  vertical-align: middle;
 }
 
-.avatar {
-    visibility: hidden;
+#avatar-container {
+  display: none;
 }
 
 nav {
-    background-color: white;
+  display: none;
 }
 
-.active {
-    background-color: white;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
+#burger-container img {
+  display: none;
+  height: 62px;
+  width: 30px;
 }
 
-ul {
-    display: none;
-    list-style-type: none;
-    margin: 0;
+main {
+  position: fixed;
+  left: 0;
+  top: 82px;
 }
-
-ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    display: block;
-    padding: 5rem 3rem 1.5rem 3rem;
-}
-
-#social-media-links {
-    display: none;
-}
-
-
-/* --- MAIN SECTION --- */
 
 main h1 {
-    display: none;
+  font-size: 20px;
+  color: #4A4441;
+  text-align: center;
 }
 
-
-/* --- PROJECTS SECTION --- */
-
-#porfolio-title {
-    text-align: center;
+section h1 {
+  font-size: 50px;
+  margin: 30px;
 }
 
-#projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
+.card {
+  color: #4A4441;
+  border-radius: 5px;
+  background-color: #DBE2EF;
+  text-align: center;
+  margin: 0 10px;
 }
 
-
-/* --- PROJECT CARDS --- */
-
-.project {
-    background-color: #9CC3D5FF;
-    color: #0063B2FF;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px 6px #ccc;
-    width: 95%;
-    display: block;
-    margin: auto;
+.card h3 {
+  color: #BEC4D2;
+  font-size: 37px;
+  font-weight: 400;
+  padding: 10px 0;
 }
 
-.project-header p {
-    text-align: center;
-    margin: 0.5rem 0;
+.icon-container {
+  width: 30%;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
-.project-details {
-    text-align: center;
-    background-color: #0063B2FF;
-    color: #9CC3D5FF;
+.head {
+  background-color: #112D4E;
 }
 
-.project-details h2 {
-    /* background-color: pink; */
-    padding: 0.5rem 0;
+.full-screen-text {
+  display: none;
 }
 
-.project-details p {
-    font-weight: 100;
-    padding: 0.3rem 5% 1rem 5%;
+.card-link-row img {
+  color: #112D4E;
 }
 
-
-/* --- FOOTER GRID --- */
-
-.project-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 0.4rem 0;
-}
-
-.project-githib {
-    grid-column: 1 1;
-    display: block;
-    margin: auto;
-    /* cursor: pointer; */
-}
-
-.project-host {
-    grid-column: 2 2;
-    display: block;
-    margin: auto;
-    cursor: pointer;
-}
+/*# sourceMappingURL=style.css.map */

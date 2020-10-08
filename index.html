@@ -8,64 +8,60 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Alexander Mollison-Ball</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-    <aside>
-        <figure>
-            <div id="avatar"></div>
-            <figcaption>Alexander Mollison-Ball</figcaption>
-        </figure>
-        <img id="menu-icon" src="assets/images/menu.svg" alt="MENU">
+    <header>
+        <div id="avatar-container">
+            <img id="avatar" src="" alt="avatar">
+        </div>
+        <h3>Alexander Mollison-Ball</h3>
         <nav>
             <ul>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">RESUME</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li>Portfolio</li>
+                <li>Resume</li>
+                <li>Contact</li>
+                <li>About</li>
             </ul>
         </nav>
-        <div id="social-media-links">
-            <img src="assets/images/github.svg" alt="GITHUB">
-            <img src="assets/images/linkedin.svg" alt="LINKEDIN">
+        <div id="burger-container">
+            <img src="assets/images/menu.svg" alt="MENU">
         </div>
-    </aside>
+    </header>
     <main>
-        <h1>Web and Mobile Developer</h1>
-        <h2 id="porfolio-title">Portfolio</h2>
-        <section id="projects">
-            <article class="project">
-                <header class="project-header">
-                    <p>MOBILE</p>
-                </header>
-                <div class="project-details">
-                    <h2>- MyStrengths -</h2>
-                    <p>MyStengths is an app to help you track your acomplishments and strengths</p>
+        <section id="portfolio">
+            <h1>My Work</h1>
+
+            <article class="card">
+                <div class="head">
+                    <h3>IndiTask</h3>
                 </div>
-                <footer class="project-footer">
-                    <a href="#"><img class="project-githib" src="assets/images/github.svg" alt="GITHUB"></a>
-                    <a href="#"><img class="project-host" src="assets/images/host.svg" alt="HOST"></a>
-                </footer>
-            </article>
-            <article class="project">
-                <header class="project-header">
-                    <p>WEB</p>
-                </header>
-                <div class="project-details">
-                    <h2>- FrenchDict -</h2>
-                    <p>FrenchDict is a website that allows you to compare French words</p>
+                <div class="icon-container">
+                    <img src="assets/images/logoSmall.png" alt="IndiTask">
                 </div>
-                <footer class="project-footer">
-                    <a href="#"><img class="project-githib" src="assets/images/github.svg" alt="GITHUB"></a>
-                    <a href="#"><img class="project-host" src="assets/images/host.svg" alt="HOST"></a>
-                </footer>
+                <p>IndiTask is a points based task management apps which lets you wager points against tasks
+                </p>
+                <p class="full-screen-text">I converted Adobe XD designs into a mobile app</p>
+                <p class="mobile-text">XSD -> Flutter App</p>
+                <div class="card-link-row">
+                    <img class="github-link" src="assets/images/github.svg" alt="GITHUB">
+                    <img class="see-more-link" src="assets/images/see-more.svg" alt="SEEMORE">
+                </div>
             </article>
+
         </section>
     </main>
+    <footer>
+        <ul>
+            <li>GitHub</li>
+            <li>LinkedIn</li>
+            <li>Upwork</li>
+        </ul>
+    </footer>
     <script src="assets/jquery.js"></script>
     <script src="assets/app.js"></script>
 </body>

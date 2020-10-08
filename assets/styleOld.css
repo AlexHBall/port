@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #112d4e;
+}
+
+
+/* NAVIGATION */
+
+aside {
+    background-color: #dbe2ef;
+    padding: 5% 2%;
+    display: grid;
+    grid-template-columns: auto 1.5rem;
+}
+
+figure {
+    width: auto;
+}
+
+figcaption {
+    font-weight: bold;
+    text-align-last: center;
+}
+
+#menu-icon {
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+#avatar {
+    display: none;
+}
+
+nav {
+    background: #fff;
+    width: 100%;
+}
+
+.active {
+    position: absolute;
+    display: block;
+    background: #fff;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    display: block;
+    padding: 1.5em 3em;
+    background-color: rgba(255, 255, 255, .35);
+    color: #000;
+}
+
+#social-media-links {
+    display: none;
+}
+
+
+/* --- MAIN SECTION --- */
+
+
+/* --- PROJECTS SECTION --- */
+
+#porfolio-title {
+    text-align: center;
+    color: #f9f7f7;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+
+/* --- PROJECT CARDS --- */
+
+.project {
+    background-color: #9CC3D5FF;
+    color: #0063B2FF;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    width: 95%;
+    display: block;
+    margin: auto;
+}
+
+.project-header p {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.project-details {
+    text-align: center;
+    background-color: #0063B2FF;
+    color: #9CC3D5FF;
+}
+
+.project-details h2 {
+    /* background-color: pink; */
+    padding: 0.5rem 0;
+}
+
+.project-details p {
+    font-weight: 100;
+    padding: 0.3rem 5% 1rem 5%;
+}
+
+
+/* --- FOOTER GRID --- */
+
+.project-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0.4rem 0;
+}
+
+.project-githib {
+    grid-column: 1 1;
+    display: block;
+    margin: auto;
+    /* cursor: pointer; */
+}
+
+.project-host {
+    grid-column: 2 2;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 20% auto;
+    }
+    aside {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 10%;
+        background-color: #3f72af;
+        color: #f9f7f7;
+        padding: 0;
+    }
+    figure {
+        /* background-color: #0063B2FF; */
+        color: #9CC3D5FF;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    nav {
+        background-color: #3f72af;
+    }
+    #menu-icon {
+        display: none;
+    }
+    #avatar {
+        display: block;
+        border-radius: 50%;
+        background: #fff;
+        width: 50%;
+        height: 50%;
+        margin: 2em auto 1em auto;
+    }
+    ul {
+        display: block;
+        color: #0063B2FF;
+        text-align: center;
+        /* padding: 3rem 0; */
+    }
+    ul li:hover {
+        background-color: grey;
+    }
+    ul li a:hover {
+        color: #fff;
+    }
+    #social-media-links {
+        color: #9CC3D5FF;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        text-align: center;
+    }
+    .soical-media-image {
+        display: block;
+        margin: auto;
+        cursor: pointer;
+    }
+    #porfolio-title {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        font-size: 4.5em;
+    }
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+    .project {
+        height: 30vh;
+        width: 40vh;
+    }
+    .project-header {
+        height: 4vh;
+    }
+    .project-details {
+        height: 18vh;
+    }
+    .project-footer {
+        margin-top: 1vh;
+    }
+    .project-footer {
+        color: #fff
+    }
+}
