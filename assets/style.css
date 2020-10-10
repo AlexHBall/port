@@ -292,6 +292,13 @@ footer li img {
   .card-link-row img {
     padding: 0;
   }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
