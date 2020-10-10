@@ -145,7 +145,7 @@ section h1 {
     background-color: $dark-blue;
 }
 
-.text-container {
+.card p {
     padding: 20px 0;
     font-size: 20px;
 }
@@ -238,23 +238,31 @@ footer li img {
         padding-left: $side-padding;
         padding-right: $side-padding;
     }
-    // ***************   CARDS    ***************   
+    // ***************   CARDS    ***************  
+    #cards {
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        grid-template-rows: auto;
+        grid-column-gap: 35px;
+    }
     .card {
-        width: 40%;
-        display: inline-block;
-        margin: 0 10px;
+        display: grid;
+        grid-template-columns: 214px auto;
+        grid-template-rows: repeat(4, 1fr) 60px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0 10px 10px 10px;
+    }
+    .head {
+        grid-area: 1 / 1 / 2 / 3;
+        padding-top: 12px;
     }
     .icon-container {
         display: none;
     }
-    .card-content {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-areas: "a b";
-    }
     .screenshot-container {
         display: block;
-        grid-area: "a";
+        grid-area: 2 / 1 / 6 / 2;
         padding: $side-padding;
     }
     .screenshot-container img {
@@ -264,20 +272,23 @@ footer li img {
         max-width: 214px;
         border-radius: 5%;
     }
-    .text-container {
-        display: block;
-        grid-area: "b";
-        font-size: 15px;
-        padding: $side-padding;
+    .card p {
+        font-size: 16px;
+        padding: 21px;
     }
-    .text-container p {
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .short-text {
+        grid-area: 2 / 2 / 3 / 3;
     }
     .full-screen-text {
         display: block;
+        grid-area: 3 / 2 / 4 / 3;
     }
-    .card-link-row {}
+    .mobile-text {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+    .card-link-row {
+        grid-area: 5 / 2 / 6 / 3;
+    }
     .card-link-row img {
         padding: 0;
     }
