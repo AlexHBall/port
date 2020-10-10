@@ -137,11 +137,15 @@ section h1 {
     width: 94px;
 }
 
+.screenshot-container {
+    display: none;
+}
+
 .head {
     background-color: $dark-blue;
 }
 
-.card p {
+.text-container {
     padding: 20px 0;
     font-size: 20px;
 }
@@ -150,14 +154,14 @@ section h1 {
     display: none;
 }
 
+.card-link-row {
+    padding-bottom: 20px;
+}
+
 .card-link-row img {
     color: $dark-blue;
     padding-left: 50px;
     padding-right: 50px;
-}
-
-.card-link-row {
-    padding-bottom: 20px;
 }
 
 // ***************   FOOTER    ***************   
@@ -233,5 +237,48 @@ footer li img {
     main {
         padding-left: $side-padding;
         padding-right: $side-padding;
+    }
+    // ***************   CARDS    ***************   
+    .card {
+        width: 40%;
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .icon-container {
+        display: none;
+    }
+    .card-content {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: "a b";
+    }
+    .screenshot-container {
+        display: block;
+        grid-area: "a";
+        padding: $side-padding;
+    }
+    .screenshot-container img {
+        height: auto;
+        width: auto;
+        max-height: 345px;
+        max-width: 214px;
+        border-radius: 5%;
+    }
+    .text-container {
+        display: block;
+        grid-area: "b";
+        font-size: 15px;
+        padding: $side-padding;
+    }
+    .text-container p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .full-screen-text {
+        display: block;
+    }
+    .card-link-row {}
+    .card-link-row img {
+        padding: 0;
     }
 }

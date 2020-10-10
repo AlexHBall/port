@@ -118,11 +118,15 @@ section h1 {
   width: 94px;
 }
 
+.screenshot-container {
+  display: none;
+}
+
 .head {
   background-color: #112D4E;
 }
 
-.card p {
+.text-container {
   padding: 20px 0;
   font-size: 20px;
 }
@@ -131,14 +135,14 @@ section h1 {
   display: none;
 }
 
+.card-link-row {
+  padding-bottom: 20px;
+}
+
 .card-link-row img {
   color: #112D4E;
   padding-left: 50px;
   padding-right: 50px;
-}
-
-.card-link-row {
-  padding-bottom: 20px;
 }
 
 footer {
@@ -222,6 +226,56 @@ footer li img {
   main {
     padding-left: 2.5%;
     padding-right: 2.5%;
+  }
+
+  .card {
+    width: 40%;
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .icon-container {
+    display: none;
+  }
+
+  .card-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "a b";
+  }
+
+  .screenshot-container {
+    display: block;
+    grid-area: "a";
+    padding: 2.5%;
+  }
+
+  .screenshot-container img {
+    height: auto;
+    width: auto;
+    max-height: 345px;
+    max-width: 214px;
+    border-radius: 5%;
+  }
+
+  .text-container {
+    display: block;
+    grid-area: "b";
+    font-size: 15px;
+    padding: 2.5%;
+  }
+
+  .text-container p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .full-screen-text {
+    display: block;
+  }
+
+  .card-link-row img {
+    padding: 0;
   }
 }
 
