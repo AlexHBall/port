@@ -9,6 +9,7 @@ $light-grey: #BEC4D2;
 $dark-grey: #4A4441;
 $light-white: #FFFFED;
 $body-font-size: 16px;
+$side-padding: 2.5%;
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@ $body-font-size: 16px;
 html,
 body {
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 body {
@@ -25,20 +27,37 @@ body {
     color: $body-color;
 }
 
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
 // ***************   HEADER    ***************   
 header {
     background-color: $light-blue;
     color: $light-white;
-    position: fixed;
-    left: 0;
-    top: 0;
+}
+
+#basic-header {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    height: 82px;
+    height: 53px;
+    padding-top: 29px;
 }
 
 header h3 {
-    font-size: $body-font-size;
-    vertical-align: middle;
+    font-size: $body-font-size+4;
+    font-weight: 500;
+    width: auto;
 }
 
 #avatar-container {
@@ -49,21 +68,35 @@ nav {
     display: none;
 }
 
-#burger-container {
-    // float: right;
+nav li {
+    text-align: center;
+    padding: 10px;
+    font-size: $body-font-size+4;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
-#burger-container img {
-    display: none;
-    height: 62px;
+nav li:hover {
+    background-color: $light-grey;
+}
+
+.active {
+    display: block;
+}
+
+#burger-container {
+    // display: inline;
+}
+
+// #burger-container 
+header img {
+    height: 30px;
     width: 30px;
 }
 
 // ***************   MAIN    ***************   
 main {
-    position: fixed;
-    left: 0;
-    top: 82px;
+    overflow-y: scroll;
 }
 
 main h1 {
@@ -77,12 +110,13 @@ section h1 {
     margin: 30px;
 }
 
+// ***************   CARD    ***************   
 .card {
     color: $dark-grey;
     border-radius: 5px;
     background-color: $pale-blue;
     text-align: center;
-    margin: 0 10px;
+    margin: 20px 10px;
 }
 
 .card h3 {
@@ -98,8 +132,18 @@ section h1 {
     padding: 30px 0;
 }
 
+.icon-container img {
+    height: 66px;
+    width: 94px;
+}
+
 .head {
     background-color: $dark-blue;
+}
+
+.card p {
+    padding: 20px 0;
+    font-size: 20px;
 }
 
 .full-screen-text {
@@ -108,4 +152,86 @@ section h1 {
 
 .card-link-row img {
     color: $dark-blue;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card-link-row {
+    padding-bottom: 20px;
+}
+
+// ***************   FOOTER    ***************   
+footer {
+    background-color: $pale-blue;
+    padding: 10px;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+}
+
+footer li img {
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+    /*   HEADER */
+    header {
+        display: grid;
+        grid-template-columns: auto 650px;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+        grid-template-areas: "a b";
+        padding-top: 29px;
+        padding-left: $side-padding;
+        padding-right: $side-padding;
+    }
+    #basic-header {
+        justify-content: start;
+        padding-top: 0;
+        grid-area: "a";
+    }
+    #avatar-container {
+        display: block;
+        margin-top: -18px;
+    }
+    #avatar {
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+    }
+    header h3 {
+        width: 300px;
+        padding-left: 10%;
+    }
+    nav {
+        display: block;
+        grid-area: "b";
+        margin-left: 25%;
+    }
+    nav ul {
+        list-style-type: none;
+        overflow: hidden;
+        display: flex;
+    }
+    nav li {
+        text-decoration: none;
+        padding-top: 0px;
+    }
+    nav li:hover {
+        background-color: $light-grey;
+    }
+    #burger-container {
+        display: none;
+    }
+    // ***************   MAIN    ***************   
+    main {
+        padding-left: $side-padding;
+        padding-right: $side-padding;
+    }
 }

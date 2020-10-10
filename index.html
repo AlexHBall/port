@@ -16,21 +16,34 @@
 
 <body>
     <header>
-        <div id="avatar-container">
-            <img id="avatar" src="" alt="avatar">
+        <div id="basic-header">
+            <div id="avatar-container">
+                <img id="avatar" src="assets/images/medog.jpg" alt="avatar">
+            </div>
+            <a href="">
+                <h3>Alexander Mollison-Ball</h3>
+            </a>
+            <div id="burger-container">
+                <img class="clickable" src="assets/images/menu.svg" alt="MENU">
+            </div>
         </div>
-        <h3>Alexander Mollison-Ball</h3>
         <nav>
             <ul>
-                <li>Portfolio</li>
-                <li>Resume</li>
-                <li>Contact</li>
-                <li>About</li>
+                <a href="">
+                    <li>PORTFOLIO</li>
+                </a>
+                <a href="">
+                    <li>RESUME</li>
+                </a>
+                <a href="">
+                    <li>CONTACT</li>
+                </a>
+                <a href="">
+                    <li>ABOUT</li>
+                </a>
+
             </ul>
         </nav>
-        <div id="burger-container">
-            <img src="assets/images/menu.svg" alt="MENU">
-        </div>
     </header>
     <main>
         <section id="portfolio">
@@ -43,13 +56,28 @@
                 <div class="icon-container">
                     <img src="assets/images/logoSmall.png" alt="IndiTask">
                 </div>
-                <p>IndiTask is a points based task management apps which lets you wager points against tasks
-                </p>
+                <p>IndiTask is a points based task management app which lets you wager points against tasks</p>
                 <p class="full-screen-text">I converted Adobe XD designs into a mobile app</p>
                 <p class="mobile-text">XSD -> Flutter App</p>
                 <div class="card-link-row">
-                    <img class="github-link" src="assets/images/github.svg" alt="GITHUB">
-                    <img class="see-more-link" src="assets/images/see-more.svg" alt="SEEMORE">
+                    <a href=""> <img class="github-link " src="assets/images/github.svg" alt="GITHUB"></a>
+                    <a href=""> <img class="see-more-link " src="assets/images/see-more.svg" alt="SEEMORE"></a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="head">
+                    <h3>MyStrengths</h3>
+                </div>
+                <div class="icon-container">
+                    <img src="assets/images/msLogo.png" alt="MyStrengths">
+                </div>
+                <p>MyStrengths is a journalling app which reminds you of your victoires large and small</p>
+                <p class="full-screen-text">I designed, created and released this app</p>
+                <p class="mobile-text">I designed, created and released this app</p>
+                <div class="card-link-row">
+                    <a href=""> <img class="github-link " src="assets/images/github.svg" alt="GITHUB"></a>
+                    <a href=""> <img class="see-more-link " src="assets/images/see-more.svg" alt="SEEMORE"></a>
                 </div>
             </article>
 
@@ -57,9 +85,18 @@
     </main>
     <footer>
         <ul>
-            <li>GitHub</li>
-            <li>LinkedIn</li>
-            <li>Upwork</li>
+            <li>
+                <a href="">
+                    <img class="github" src="assets/images/github.svg" alt=""> </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="linkedin" src="assets/images/linkedin.svg" alt=""></a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="upwork" src="assets/images/upwork.svg" alt="upwork"></a>
+            </li>
         </ul>
     </footer>
     <script src="assets/jquery.js"></script>

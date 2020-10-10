@@ -1,9 +1,7 @@
 $(document).ready(function() {
 
-    $("#menu-icon").click(function(event) {
-
-        $('ul').toggleClass('active');
+    $("#burger-container").click(function(event) {
+        $('nav').toggleClass('active');
         event.preventDefault();
-
     });
 });
