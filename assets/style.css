@@ -329,6 +329,37 @@ footer li img {
     padding: 0;
   }
 
+  .project-card img {
+    position: absolute;
+  }
+
+  .im-one {
+    left: 2.5%;
+    top: 35%;
+  }
+
+  .im-two {
+    left: 205px;
+    top: 32.5%;
+  }
+
+  .im-three {
+    left: 380px;
+    top: 30%;
+  }
+
+  .project p {
+    position: relative;
+    left: 52%;
+    width: 45%;
+  }
+
+  .project-link-row img {
+    position: relative;
+    left: 29%;
+    margin-left: 20px;
+  }
+
   footer {
     position: fixed;
     left: 0;

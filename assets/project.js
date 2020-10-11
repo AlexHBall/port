@@ -12,9 +12,11 @@ $(document).ready(function() {
     }
     arrangeProjectCard($(window).width());
     $(window).resize(function() {
-        console.log("hi");
         arrangeProjectCard($(window).width());
     });
 
+    function unwrap(node) {
+        node.replaceWith(...node.childNodes);
+    }
 
 });

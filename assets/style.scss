@@ -329,34 +329,31 @@ footer li img {
         padding: 0;
     }
     // ***************   PROJECT     ***************   
-    // .project-card {
-    //     display: grid;
-    //     grid-template-columns: 1fr;
-    //     grid-template-rows: 400px 1fr 400px 1fr 400px repeat(2, 1fr);
-    //     grid-column-gap: 0px;
-    //     grid-row-gap: 0px;
-    // }
-    // .im-one {
-    //     grid-area: 1 / 1 / 2 / 2;
-    // }
-    // .para-one {
-    //     grid-area: 2 / 1 / 3 / 2;
-    // }
-    // .im-two {
-    //     grid-area: 3 / 1 / 4 / 2;
-    // }
-    // .para-two {
-    //     grid-area: 4 / 1 / 5 / 2;
-    // }
-    // .im-three {
-    //     grid-area: 5 / 1 / 6 / 2;
-    // }
-    // .para-three {
-    //     grid-area: 6 / 1 / 7 / 2;
-    // }
-    // .project-link-row {
-    //     grid-area: 7 / 1 / 8 / 2;
-    // }
+    .project-card img {
+        position: absolute;
+    }
+    .im-one {
+        left: $side-padding;
+        top: 35%;
+    }
+    .im-two {
+        left: 205px;
+        top: 32.5%;
+    }
+    .im-three {
+        left: 380px;
+        top: 30%;
+    }
+    .project p {
+        position: relative;
+        left: 52%;
+        width: 45%;
+    }
+    .project-link-row img {
+        position: relative;
+        left: 29%;
+        margin-left: 20px;
+    }
     footer {
         position: fixed;
         left: 0;
