@@ -1,6 +1,6 @@
 $(document).ready(function() {
     function arrangeProjectCard(width) {
-        if (width) {
+        if (width < 767) {
             $('.para-one').insertAfter('.im-one');
             $('.para-two').insertAfter('.im-two');
             $('.para-three').insertAfter('.im-three');
@@ -11,9 +11,8 @@ $(document).ready(function() {
         }
     }
     arrangeProjectCard($(window).width());
-
-
     $(window).resize(function() {
+        console.log("hi");
         arrangeProjectCard($(window).width());
     });
 

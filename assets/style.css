@@ -145,6 +145,30 @@ section h1 {
   padding-right: 50px;
 }
 
+.project-card {
+  color: #4A4441;
+  padding: 2.5%;
+  text-align: center;
+}
+
+.project-card img {
+  height: auto;
+  width: auto;
+  max-height: 400px;
+  max-width: 350px;
+  border-radius: 5%;
+  border: 5px solid #555;
+}
+
+.project-card p {
+  margin: 30px;
+  font-size: 19px;
+}
+
+.project-link-row img {
+  border: none;
+}
+
 footer {
   background-color: #DBE2EF;
   padding: 10px;
@@ -163,7 +187,7 @@ footer li img {
   margin: auto;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 767px) {
   /*   HEADER */
   header {
     display: grid;
